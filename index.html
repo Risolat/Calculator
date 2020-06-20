@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1 class="title">Calculator</h1>
+		<div class="calculator-wrapper">
+			<form name="form">
+				<input name="textView" class="output" placeholder="0">
+			</form>
+			<div class="btn-wrapper">
+				<div class="numbers-wrapper">
+					<button onclick="insert(1)" class="number">1</button>
+					<button onclick="insert(2)" class="number">2</button>
+					<button onclick="insert(3)" class="number">3</button>
+					<button onclick="insert(4)" class="number">4</button>
+					<button onclick="insert(5)" class="number">5</button>
+					<button onclick="insert(6)" class="number">6</button>
+					<button onclick="insert(7)" class="number">7</button>
+					<button onclick="insert(8)" class="number">8</button>
+					<button onclick="insert(9)" class="number">9</button>
+					<button onclick="insert(0)" class="number">0</button>
+				</div>
+				<div class="arifmetic-btn-wrapper">
+					<button onclick="clean()" class="btn">C</button>
+					<button onclick="back()" class="btn remove-btn">x</button>
+					<button onclick="insert('+')" class="btn add-btn">+</button>
+					<button onclick="insert('-')" class="btn sub-btn">-</button>
+					<button onclick="insert('*')" class="btn multiply-btn">*</button>
+					<button onclick="insert('/')" class="btn divide-btn">/</button>
+					<button onclick="insert(',')" class="btn">,</button>
+				</div>
+			</div>
+			<button onclick="equal()" class="result-btn">=</button>
+		</div>
+	</div>
+</body>
+</html>
